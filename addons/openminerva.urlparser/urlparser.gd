@@ -18,7 +18,7 @@ func deconstruct(url: String) -> Dictionary:
 		var groups = match.get_strings()
 
 		return_dict.data.host = groups[1] + groups[2]
-		return_dict.data.port = groups[3]
+		return_dict.data.port = int(groups[3])
 		return_dict.data.path = groups[4]
 		return_dict.data.query = groups[6]
 
