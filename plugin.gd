@@ -2,7 +2,7 @@
 extends EditorPlugin
 
 const AUTOLOAD_NAME = "UrlParser"
-const SCRIPT_PATH = "res://addons/openminerva.urlparser/urlparser.gd"
+const SCRIPT_PATH = "res://addons/godot-urlparser/urlparser.gd"
 
 func _enter_tree():
     if not ProjectSettings.has_setting("autoload/" + AUTOLOAD_NAME):
